@@ -1,3 +1,3 @@
 # cost-calculator
-A Cost calcutor for a Bangladeshi e-commerce site with javascript.
+A Cost calculator for a Bangladeshi e-commerce site with javascript.
 
