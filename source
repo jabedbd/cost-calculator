@@ -1,0 +1,46 @@
+
+<head>
+<title>Cost Calculator</title>
+</head>
+
+<body>
+<script>
+function calc(){
+var a = document.getElementById('cost');
+var cost = a.value
+var b = document.getElementById('weight');
+var wg = b.value
+var re = document.getElementById('result');
+
+if (cost < 10){
+re.value = cost*110 +  wg*700;
+}
+
+else if (cost < 50){
+re.value = cost*100 +  wg*700;
+}
+    
+else if (cost < 500){
+re.value = cost*95 +  wg*700;
+}
+else if (cost > 500){
+re.value = cost*90 +  wg*700;
+}
+else {
+    
+    re.value = document.write("Please input a valid price")
+}
+}
+</script>
+    
+<form>
+Price: 
+<input type=text id=cost required>
+Weight:
+<input type=text id=weight required>
+<input type="button" onclick="calc();" value="Submit">
+TK:
+<input type=text id=result disabled>
+</form>
+</body>
+  
